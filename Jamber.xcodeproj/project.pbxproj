@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F0E961821AA05AE004E7E0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E961721AA05AE004E7E0D /* AppDelegate.swift */; };
+		1F0E961A21AA05AE004E7E0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E961921AA05AE004E7E0D /* ViewController.swift */; };
+		1F0E961D21AA05AE004E7E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0E961B21AA05AE004E7E0D /* Main.storyboard */; };
+		1F0E962021AA05AE004E7E0D /* Jamber.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E961E21AA05AE004E7E0D /* Jamber.xcdatamodeld */; };
+		1F0E962221AA05B0004E7E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0E962121AA05B0004E7E0D /* Assets.xcassets */; };
+		1F0E962521AA05B0004E7E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0E962321AA05B0004E7E0D /* LaunchScreen.storyboard */; };
+		1F0E963021AA05B0004E7E0D /* JamberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E962F21AA05B0004E7E0D /* JamberTests.swift */; };
+		1F0E963B21AA05B0004E7E0D /* JamberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E963A21AA05B0004E7E0D /* JamberUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F0E962C21AA05B0004E7E0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F0E960C21AA05AE004E7E0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F0E961321AA05AE004E7E0D;
+			remoteInfo = Jamber;
+		};
+		1F0E963721AA05B0004E7E0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F0E960C21AA05AE004E7E0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F0E961321AA05AE004E7E0D;
+			remoteInfo = Jamber;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F0E961421AA05AE004E7E0D /* Jamber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jamber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0E961721AA05AE004E7E0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F0E961921AA05AE004E7E0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F0E961C21AA05AE004E7E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F0E961F21AA05AE004E7E0D /* Jamber.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jamber.xcdatamodel; sourceTree = "<group>"; };
+		1F0E962121AA05B0004E7E0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F0E962421AA05B0004E7E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F0E962621AA05B0004E7E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F0E962B21AA05B0004E7E0D /* JamberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JamberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0E962F21AA05B0004E7E0D /* JamberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamberTests.swift; sourceTree = "<group>"; };
+		1F0E963121AA05B0004E7E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F0E963621AA05B0004E7E0D /* JamberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JamberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0E963A21AA05B0004E7E0D /* JamberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamberUITests.swift; sourceTree = "<group>"; };
+		1F0E963C21AA05B0004E7E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F0E961121AA05AE004E7E0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F0E962821AA05B0004E7E0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F0E963321AA05B0004E7E0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F0E960B21AA05AE004E7E0D = {
+			isa = PBXGroup;
+			children = (
+				1F0E961621AA05AE004E7E0D /* Jamber */,
+				1F0E962E21AA05B0004E7E0D /* JamberTests */,
+				1F0E963921AA05B0004E7E0D /* JamberUITests */,
+				1F0E961521AA05AE004E7E0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F0E961521AA05AE004E7E0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E961421AA05AE004E7E0D /* Jamber.app */,
+				1F0E962B21AA05B0004E7E0D /* JamberTests.xctest */,
+				1F0E963621AA05B0004E7E0D /* JamberUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F0E961621AA05AE004E7E0D /* Jamber */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E961721AA05AE004E7E0D /* AppDelegate.swift */,
+				1F0E961921AA05AE004E7E0D /* ViewController.swift */,
+				1F0E961B21AA05AE004E7E0D /* Main.storyboard */,
+				1F0E962121AA05B0004E7E0D /* Assets.xcassets */,
+				1F0E962321AA05B0004E7E0D /* LaunchScreen.storyboard */,
+				1F0E962621AA05B0004E7E0D /* Info.plist */,
+				1F0E961E21AA05AE004E7E0D /* Jamber.xcdatamodeld */,
+			);
+			path = Jamber;
+			sourceTree = "<group>";
+		};
+		1F0E962E21AA05B0004E7E0D /* JamberTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E962F21AA05B0004E7E0D /* JamberTests.swift */,
+				1F0E963121AA05B0004E7E0D /* Info.plist */,
+			);
+			path = JamberTests;
+			sourceTree = "<group>";
+		};
+		1F0E963921AA05B0004E7E0D /* JamberUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E963A21AA05B0004E7E0D /* JamberUITests.swift */,
+				1F0E963C21AA05B0004E7E0D /* Info.plist */,
+			);
+			path = JamberUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F0E961321AA05AE004E7E0D /* Jamber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F0E963F21AA05B0004E7E0D /* Build configuration list for PBXNativeTarget "Jamber" */;
+			buildPhases = (
+				1F0E961021AA05AE004E7E0D /* Sources */,
+				1F0E961121AA05AE004E7E0D /* Frameworks */,
+				1F0E961221AA05AE004E7E0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jamber;
+			productName = Jamber;
+			productReference = 1F0E961421AA05AE004E7E0D /* Jamber.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F0E962A21AA05B0004E7E0D /* JamberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F0E964221AA05B0004E7E0D /* Build configuration list for PBXNativeTarget "JamberTests" */;
+			buildPhases = (
+				1F0E962721AA05B0004E7E0D /* Sources */,
+				1F0E962821AA05B0004E7E0D /* Frameworks */,
+				1F0E962921AA05B0004E7E0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F0E962D21AA05B0004E7E0D /* PBXTargetDependency */,
+			);
+			name = JamberTests;
+			productName = JamberTests;
+			productReference = 1F0E962B21AA05B0004E7E0D /* JamberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F0E963521AA05B0004E7E0D /* JamberUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F0E964521AA05B0004E7E0D /* Build configuration list for PBXNativeTarget "JamberUITests" */;
+			buildPhases = (
+				1F0E963221AA05B0004E7E0D /* Sources */,
+				1F0E963321AA05B0004E7E0D /* Frameworks */,
+				1F0E963421AA05B0004E7E0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F0E963821AA05B0004E7E0D /* PBXTargetDependency */,
+			);
+			name = JamberUITests;
+			productName = JamberUITests;
+			productReference = 1F0E963621AA05B0004E7E0D /* JamberUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F0E960C21AA05AE004E7E0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jeff Small";
+				TargetAttributes = {
+					1F0E961321AA05AE004E7E0D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					1F0E962A21AA05B0004E7E0D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1F0E961321AA05AE004E7E0D;
+					};
+					1F0E963521AA05B0004E7E0D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1F0E961321AA05AE004E7E0D;
+					};
+				};
+			};
+			buildConfigurationList = 1F0E960F21AA05AE004E7E0D /* Build configuration list for PBXProject "Jamber" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F0E960B21AA05AE004E7E0D;
+			productRefGroup = 1F0E961521AA05AE004E7E0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F0E961321AA05AE004E7E0D /* Jamber */,
+				1F0E962A21AA05B0004E7E0D /* JamberTests */,
+				1F0E963521AA05B0004E7E0D /* JamberUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F0E961221AA05AE004E7E0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0E962521AA05B0004E7E0D /* LaunchScreen.storyboard in Resources */,
+				1F0E962221AA05B0004E7E0D /* Assets.xcassets in Resources */,
+				1F0E961D21AA05AE004E7E0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F0E962921AA05B0004E7E0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F0E963421AA05B0004E7E0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F0E961021AA05AE004E7E0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0E962021AA05AE004E7E0D /* Jamber.xcdatamodeld in Sources */,
+				1F0E961A21AA05AE004E7E0D /* ViewController.swift in Sources */,
+				1F0E961821AA05AE004E7E0D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F0E962721AA05B0004E7E0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0E963021AA05B0004E7E0D /* JamberTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F0E963221AA05B0004E7E0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0E963B21AA05B0004E7E0D /* JamberUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F0E962D21AA05B0004E7E0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F0E961321AA05AE004E7E0D /* Jamber */;
+			targetProxy = 1F0E962C21AA05B0004E7E0D /* PBXContainerItemProxy */;
+		};
+		1F0E963821AA05B0004E7E0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F0E961321AA05AE004E7E0D /* Jamber */;
+			targetProxy = 1F0E963721AA05B0004E7E0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F0E961B21AA05AE004E7E0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F0E961C21AA05AE004E7E0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F0E962321AA05B0004E7E0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F0E962421AA05B0004E7E0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F0E963D21AA05B0004E7E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F0E963E21AA05B0004E7E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F0E964021AA05B0004E7E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDP24D6J8J;
+				INFOPLIST_FILE = Jamber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.small.jeff.Jamber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F0E964121AA05B0004E7E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDP24D6J8J;
+				INFOPLIST_FILE = Jamber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.small.jeff.Jamber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1F0E964321AA05B0004E7E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDP24D6J8J;
+				INFOPLIST_FILE = JamberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.small.jeff.JamberTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jamber.app/Jamber";
+			};
+			name = Debug;
+		};
+		1F0E964421AA05B0004E7E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDP24D6J8J;
+				INFOPLIST_FILE = JamberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.small.jeff.JamberTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jamber.app/Jamber";
+			};
+			name = Release;
+		};
+		1F0E964621AA05B0004E7E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDP24D6J8J;
+				INFOPLIST_FILE = JamberUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.small.jeff.JamberUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jamber;
+			};
+			name = Debug;
+		};
+		1F0E964721AA05B0004E7E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDP24D6J8J;
+				INFOPLIST_FILE = JamberUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.small.jeff.JamberUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jamber;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F0E960F21AA05AE004E7E0D /* Build configuration list for PBXProject "Jamber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F0E963D21AA05B0004E7E0D /* Debug */,
+				1F0E963E21AA05B0004E7E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F0E963F21AA05B0004E7E0D /* Build configuration list for PBXNativeTarget "Jamber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F0E964021AA05B0004E7E0D /* Debug */,
+				1F0E964121AA05B0004E7E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F0E964221AA05B0004E7E0D /* Build configuration list for PBXNativeTarget "JamberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F0E964321AA05B0004E7E0D /* Debug */,
+				1F0E964421AA05B0004E7E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F0E964521AA05B0004E7E0D /* Build configuration list for PBXNativeTarget "JamberUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F0E964621AA05B0004E7E0D /* Debug */,
+				1F0E964721AA05B0004E7E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1F0E961E21AA05AE004E7E0D /* Jamber.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1F0E961F21AA05AE004E7E0D /* Jamber.xcdatamodel */,
+			);
+			currentVersion = 1F0E961F21AA05AE004E7E0D /* Jamber.xcdatamodel */;
+			path = Jamber.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1F0E960C21AA05AE004E7E0D /* Project object */;
+}
