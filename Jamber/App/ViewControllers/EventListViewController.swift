@@ -13,6 +13,7 @@ class EventListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
     let dataSource = EventsDataSource()
+    var timer: Timer?
 
     override func viewDidLoad() {
         do {
@@ -23,6 +24,14 @@ class EventListViewController: UIViewController {
 
         tableView.dataSource = dataSource
         tableView.tableFooterView = UIView()
+
+        timer = Timer(fire: Date(), interval: 1.0, repeats: true) { [weak self] _ in
+            self?.countdownContainerView.refreshLabels()
+        }
+
+        if let timer = timer {
+            RunLoop.main.add(timer, forMode: RunLoop.Mode.default)
+        }
     }
 }
 

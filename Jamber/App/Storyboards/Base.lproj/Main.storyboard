@@ -30,31 +30,59 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V9V-9Z-WOE" userLabel="Timer View" customClass="CountdownView" customModule="Jamber" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="150" width="375" height="50"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V9V-9Z-WOE" userLabel="Timer View">
+                                        <rect key="frame" x="0.0" y="152" width="375" height="48"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Months 15 Days" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LG7-AI-fmq">
-                                                <rect key="frame" x="12" y="8" width="351" height="21"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
-                                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Hours 27 Minutes 14 Seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yic-Ab-HJS">
-                                                <rect key="frame" x="12" y="29" width="351" height="21"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
-                                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fbt-NL-WAJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="23.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Months" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbl-MG-Mkv" userLabel="monthsLabel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="23.5"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Days" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RY-w3-GdO" userLabel="daysLabel">
+                                                        <rect key="frame" x="202.5" y="0.0" width="172.5" height="23.5"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="X1U-Pw-fSM">
+                                                <rect key="frame" x="0.0" y="23.5" width="375" height="23.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21 Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xo-GX-zMJ" userLabel="hoursLabel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="23.5"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50 Minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYS-3J-X6Q" userLabel="minutesLabel">
+                                                        <rect key="frame" x="128.5" y="0.0" width="118" height="23.5"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34 Seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLE-SW-aDB" userLabel="secondsLabel">
+                                                        <rect key="frame" x="256.5" y="0.0" width="118.5" height="23.5"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40362799659999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Yic-Ab-HJS" secondAttribute="trailing" constant="12" id="9ri-jX-paN"/>
-                                            <constraint firstItem="Yic-Ab-HJS" firstAttribute="top" secondItem="LG7-AI-fmq" secondAttribute="bottom" id="ANJ-5F-Pg9"/>
-                                            <constraint firstAttribute="bottom" secondItem="Yic-Ab-HJS" secondAttribute="bottom" id="Ix0-2k-dGB"/>
-                                            <constraint firstItem="LG7-AI-fmq" firstAttribute="leading" secondItem="V9V-9Z-WOE" secondAttribute="leading" constant="12" id="QzW-cB-XC3"/>
-                                            <constraint firstItem="LG7-AI-fmq" firstAttribute="top" secondItem="V9V-9Z-WOE" secondAttribute="top" constant="8" id="d4U-Pd-ZOw"/>
-                                            <constraint firstItem="Yic-Ab-HJS" firstAttribute="leading" secondItem="V9V-9Z-WOE" secondAttribute="leading" constant="12" id="iDl-fk-dhO"/>
-                                            <constraint firstAttribute="trailing" secondItem="LG7-AI-fmq" secondAttribute="trailing" constant="12" id="kTl-R8-xAv"/>
+                                            <constraint firstAttribute="trailing" secondItem="fbt-NL-WAJ" secondAttribute="trailing" id="16a-F8-CE4"/>
+                                            <constraint firstItem="X1U-Pw-fSM" firstAttribute="leading" secondItem="V9V-9Z-WOE" secondAttribute="leading" id="2nF-mI-kQr"/>
+                                            <constraint firstItem="fbt-NL-WAJ" firstAttribute="top" secondItem="V9V-9Z-WOE" secondAttribute="top" id="FRt-Fe-I73"/>
+                                            <constraint firstAttribute="trailing" secondItem="X1U-Pw-fSM" secondAttribute="trailing" id="IKl-so-Tde"/>
+                                            <constraint firstAttribute="bottom" secondItem="X1U-Pw-fSM" secondAttribute="bottom" constant="1" id="M05-sW-cO5"/>
+                                            <constraint firstItem="X1U-Pw-fSM" firstAttribute="top" secondItem="fbt-NL-WAJ" secondAttribute="bottom" id="V7O-1l-Q9q"/>
+                                            <constraint firstItem="fbt-NL-WAJ" firstAttribute="leading" secondItem="V9V-9Z-WOE" secondAttribute="leading" id="ZGr-IH-ojr"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -73,6 +101,15 @@
                                     <constraint firstItem="Lf0-L5-qAs" firstAttribute="leading" secondItem="17n-fr-12V" secondAttribute="leading" constant="20" id="ojY-yu-eUc"/>
                                     <constraint firstItem="own-fi-Hpl" firstAttribute="top" secondItem="17n-fr-12V" secondAttribute="top" id="zf8-h8-W6n"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="backgroundImageView" destination="own-fi-Hpl" id="1WM-9G-3MK"/>
+                                    <outlet property="daysLabel" destination="4RY-w3-GdO" id="KRU-8s-g6F"/>
+                                    <outlet property="hoursLabel" destination="4xo-GX-zMJ" id="VEL-td-Whz"/>
+                                    <outlet property="minutesLabel" destination="TYS-3J-X6Q" id="5lW-QX-jS7"/>
+                                    <outlet property="monthsLabel" destination="Tbl-MG-Mkv" id="Nqs-iN-qYl"/>
+                                    <outlet property="secondsLabel" destination="GLE-SW-aDB" id="rFG-mt-9tm"/>
+                                    <outlet property="titleLabel" destination="Lf0-L5-qAs" id="gll-la-soe"/>
+                                </connections>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QMF-Eh-ge4">
                                 <rect key="frame" x="0.0" y="220" width="375" height="398"/>
