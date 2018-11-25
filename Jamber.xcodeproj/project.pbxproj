@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		1F0E961821AA05AE004E7E0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E961721AA05AE004E7E0D /* AppDelegate.swift */; };
-		1F0E961A21AA05AE004E7E0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E961921AA05AE004E7E0D /* ViewController.swift */; };
+		1F0E961A21AA05AE004E7E0D /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E961921AA05AE004E7E0D /* EventListViewController.swift */; };
 		1F0E961D21AA05AE004E7E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0E961B21AA05AE004E7E0D /* Main.storyboard */; };
 		1F0E962021AA05AE004E7E0D /* Jamber.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E961E21AA05AE004E7E0D /* Jamber.xcdatamodeld */; };
 		1F0E962221AA05B0004E7E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0E962121AA05B0004E7E0D /* Assets.xcassets */; };
 		1F0E962521AA05B0004E7E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0E962321AA05B0004E7E0D /* LaunchScreen.storyboard */; };
 		1F0E963021AA05B0004E7E0D /* JamberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E962F21AA05B0004E7E0D /* JamberTests.swift */; };
 		1F0E963B21AA05B0004E7E0D /* JamberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E963A21AA05B0004E7E0D /* JamberUITests.swift */; };
+		1F0E965621AA0874004E7E0D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E965521AA0874004E7E0D /* Event.swift */; };
+		1F0E965921AA0A9B004E7E0D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E965821AA0A9B004E7E0D /* Location.swift */; };
+		1F0E965C21AA0C34004E7E0D /* EventOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E965B21AA0C34004E7E0D /* EventOverviewViewModel.swift */; };
+		1F0E965F21AA0EA6004E7E0D /* Events.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F0E965E21AA0EA6004E7E0D /* Events.json */; };
+		1F0E966121AA1FB9004E7E0D /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E966021AA1FB9004E7E0D /* CountdownView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,7 @@
 /* Begin PBXFileReference section */
 		1F0E961421AA05AE004E7E0D /* Jamber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jamber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F0E961721AA05AE004E7E0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F0E961921AA05AE004E7E0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F0E961921AA05AE004E7E0D /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		1F0E961C21AA05AE004E7E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F0E961F21AA05AE004E7E0D /* Jamber.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jamber.xcdatamodel; sourceTree = "<group>"; };
 		1F0E962121AA05B0004E7E0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		1F0E963621AA05B0004E7E0D /* JamberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JamberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F0E963A21AA05B0004E7E0D /* JamberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamberUITests.swift; sourceTree = "<group>"; };
 		1F0E963C21AA05B0004E7E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F0E965521AA0874004E7E0D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		1F0E965821AA0A9B004E7E0D /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		1F0E965B21AA0C34004E7E0D /* EventOverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventOverviewViewModel.swift; sourceTree = "<group>"; };
+		1F0E965E21AA0EA6004E7E0D /* Events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Events.json; sourceTree = "<group>"; };
+		1F0E966021AA1FB9004E7E0D /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,9 @@
 		1F0E961621AA05AE004E7E0D /* Jamber */ = {
 			isa = PBXGroup;
 			children = (
-				1F0E961721AA05AE004E7E0D /* AppDelegate.swift */,
-				1F0E961921AA05AE004E7E0D /* ViewController.swift */,
-				1F0E961B21AA05AE004E7E0D /* Main.storyboard */,
-				1F0E962121AA05B0004E7E0D /* Assets.xcassets */,
-				1F0E962321AA05B0004E7E0D /* LaunchScreen.storyboard */,
+				1F0E964F21AA0737004E7E0D /* App */,
+				1F0E965121AA079B004E7E0D /* Resources */,
 				1F0E962621AA05B0004E7E0D /* Info.plist */,
-				1F0E961E21AA05AE004E7E0D /* Jamber.xcdatamodeld */,
 			);
 			path = Jamber;
 			sourceTree = "<group>";
@@ -126,6 +132,127 @@
 				1F0E963C21AA05B0004E7E0D /* Info.plist */,
 			);
 			path = JamberUITests;
+			sourceTree = "<group>";
+		};
+		1F0E964921AA0693004E7E0D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E961921AA05AE004E7E0D /* EventListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1F0E964A21AA06A0004E7E0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E966021AA1FB9004E7E0D /* CountdownView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F0E964B21AA06A6004E7E0D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E965A21AA0C26004E7E0D /* Events */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1F0E964C21AA06AF004E7E0D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E965721AA0A89004E7E0D /* Locations */,
+				1F0E965421AA0838004E7E0D /* Events */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F0E964D21AA06E3004E7E0D /* Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E961721AA05AE004E7E0D /* AppDelegate.swift */,
+			);
+			path = Lifecycle;
+			sourceTree = "<group>";
+		};
+		1F0E964E21AA0705004E7E0D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E962321AA05B0004E7E0D /* LaunchScreen.storyboard */,
+				1F0E961B21AA05AE004E7E0D /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1F0E964F21AA0737004E7E0D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E964D21AA06E3004E7E0D /* Lifecycle */,
+				1F0E964C21AA06AF004E7E0D /* Models */,
+				1F0E964E21AA0705004E7E0D /* Storyboards */,
+				1F0E964921AA0693004E7E0D /* ViewControllers */,
+				1F0E964B21AA06A6004E7E0D /* ViewModels */,
+				1F0E964A21AA06A0004E7E0D /* Views */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1F0E965121AA079B004E7E0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E965221AA07AA004E7E0D /* Assets */,
+				1F0E965321AA07BA004E7E0D /* Data */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1F0E965221AA07AA004E7E0D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E962121AA05B0004E7E0D /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		1F0E965321AA07BA004E7E0D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E965D21AA0E8F004E7E0D /* Events */,
+				1F0E961E21AA05AE004E7E0D /* Jamber.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1F0E965421AA0838004E7E0D /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E965521AA0874004E7E0D /* Event.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		1F0E965721AA0A89004E7E0D /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E965821AA0A9B004E7E0D /* Location.swift */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		1F0E965A21AA0C26004E7E0D /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E965B21AA0C34004E7E0D /* EventOverviewViewModel.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		1F0E965D21AA0E8F004E7E0D /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E965E21AA0EA6004E7E0D /* Events.json */,
+			);
+			path = Events;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0E965F21AA0EA6004E7E0D /* Events.json in Resources */,
 				1F0E962521AA05B0004E7E0D /* LaunchScreen.storyboard in Resources */,
 				1F0E962221AA05B0004E7E0D /* Assets.xcassets in Resources */,
 				1F0E961D21AA05AE004E7E0D /* Main.storyboard in Resources */,
@@ -259,8 +387,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0E965C21AA0C34004E7E0D /* EventOverviewViewModel.swift in Sources */,
+				1F0E965621AA0874004E7E0D /* Event.swift in Sources */,
 				1F0E962021AA05AE004E7E0D /* Jamber.xcdatamodeld in Sources */,
-				1F0E961A21AA05AE004E7E0D /* ViewController.swift in Sources */,
+				1F0E966121AA1FB9004E7E0D /* CountdownView.swift in Sources */,
+				1F0E965921AA0A9B004E7E0D /* Location.swift in Sources */,
+				1F0E961A21AA05AE004E7E0D /* EventListViewController.swift in Sources */,
 				1F0E961821AA05AE004E7E0D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

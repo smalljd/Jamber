@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O20-cZ-R12">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Events-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Events" customClass="EventListViewController" customModule="Jamber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17n-fr-12V" userLabel="CountdownView" customClass="CountdownView" customModule="Jamber" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friends_by_water" translatesAutoresizingMaskIntoConstraints="NO" id="own-fi-Hpl">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wedding Countdown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lf0-L5-qAs">
+                                        <rect key="frame" x="20" y="12" width="335" height="57.5"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V9V-9Z-WOE" userLabel="Timer View" customClass="CountdownView" customModule="Jamber" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="150" width="375" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Months 15 Days" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LG7-AI-fmq">
+                                                <rect key="frame" x="12" y="8" width="351" height="21"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Hours 27 Minutes 14 Seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yic-Ab-HJS">
+                                                <rect key="frame" x="12" y="29" width="351" height="21"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40362799659999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Yic-Ab-HJS" secondAttribute="trailing" constant="12" id="9ri-jX-paN"/>
+                                            <constraint firstItem="Yic-Ab-HJS" firstAttribute="top" secondItem="LG7-AI-fmq" secondAttribute="bottom" id="ANJ-5F-Pg9"/>
+                                            <constraint firstAttribute="bottom" secondItem="Yic-Ab-HJS" secondAttribute="bottom" id="Ix0-2k-dGB"/>
+                                            <constraint firstItem="LG7-AI-fmq" firstAttribute="leading" secondItem="V9V-9Z-WOE" secondAttribute="leading" constant="12" id="QzW-cB-XC3"/>
+                                            <constraint firstItem="LG7-AI-fmq" firstAttribute="top" secondItem="V9V-9Z-WOE" secondAttribute="top" constant="8" id="d4U-Pd-ZOw"/>
+                                            <constraint firstItem="Yic-Ab-HJS" firstAttribute="leading" secondItem="V9V-9Z-WOE" secondAttribute="leading" constant="12" id="iDl-fk-dhO"/>
+                                            <constraint firstAttribute="trailing" secondItem="LG7-AI-fmq" secondAttribute="trailing" constant="12" id="kTl-R8-xAv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="V9V-9Z-WOE" firstAttribute="leading" secondItem="17n-fr-12V" secondAttribute="leading" id="1vb-P3-DHZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="V9V-9Z-WOE" secondAttribute="bottom" id="CJo-BQ-4XA"/>
+                                    <constraint firstAttribute="height" constant="200" id="Cvd-k3-f1n"/>
+                                    <constraint firstAttribute="bottom" secondItem="own-fi-Hpl" secondAttribute="bottom" id="IfZ-hx-dyN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lf0-L5-qAs" secondAttribute="trailing" constant="20" id="Kfp-T7-cLk"/>
+                                    <constraint firstAttribute="trailing" secondItem="own-fi-Hpl" secondAttribute="trailing" id="NIn-Ka-e9s"/>
+                                    <constraint firstAttribute="trailing" secondItem="V9V-9Z-WOE" secondAttribute="trailing" id="Yho-6e-fGR"/>
+                                    <constraint firstItem="V9V-9Z-WOE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Lf0-L5-qAs" secondAttribute="bottom" constant="40" id="Zde-wj-GRz"/>
+                                    <constraint firstItem="own-fi-Hpl" firstAttribute="leading" secondItem="17n-fr-12V" secondAttribute="leading" id="bns-qT-8Wc"/>
+                                    <constraint firstItem="Lf0-L5-qAs" firstAttribute="top" secondItem="17n-fr-12V" secondAttribute="top" constant="12" id="dOd-Ky-1q3"/>
+                                    <constraint firstItem="Lf0-L5-qAs" firstAttribute="leading" secondItem="17n-fr-12V" secondAttribute="leading" constant="20" id="ojY-yu-eUc"/>
+                                    <constraint firstItem="own-fi-Hpl" firstAttribute="top" secondItem="17n-fr-12V" secondAttribute="top" id="zf8-h8-W6n"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QMF-Eh-ge4">
+                                <rect key="frame" x="0.0" y="220" width="375" height="398"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QMF-Eh-ge4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="98E-LB-cIn"/>
+                            <constraint firstItem="17n-fr-12V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="A2l-78-182"/>
+                            <constraint firstItem="QMF-Eh-ge4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="B5d-66-Tkj"/>
+                            <constraint firstItem="17n-fr-12V" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BfM-9d-K8Z"/>
+                            <constraint firstItem="QMF-Eh-ge4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RLE-2k-qdV"/>
+                            <constraint firstItem="QMF-Eh-ge4" firstAttribute="top" secondItem="17n-fr-12V" secondAttribute="bottom" id="ZZX-YQ-eKb"/>
+                            <constraint firstItem="17n-fr-12V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="k4C-aY-VpP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Events" id="FfV-Q0-y9k"/>
+                    <connections>
+                        <outlet property="countdownContainerView" destination="17n-fr-12V" id="UKE-LH-3DU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.2" y="132.68365817091455"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="LAt-e5-JyW">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="O20-cZ-R12" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2om-3u-3ZN">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="oJA-2h-Dyg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1gX-De-UrI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="friends_by_water" width="1382.4000244140625" height="921.5999755859375"/>
+    </resources>
+</document>

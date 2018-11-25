@@ -1,0 +1,40 @@
+{
+    "events": [
+        {
+            "date": "2019-06-01T12:30:00Z",
+            "description": "Join us for an outdoor garden wedding at Great Marsh Estate, where we'll say our vows and take our bows. Reception to follow immediately after.",
+            "full_res_image": "GreatMarsh_FullRes",
+            "thumbnail_image": "GreatMarsh_Thumb",
+            "title": "Wedding Ceremony",
+            "location": {
+                "address": "6105 Great Marsh Pl, Bealeton, VA 22712, USA",
+                "title": "Great Marsh Estate",
+                "website": "https://greatmarshestate.com/"
+            }
+        },
+        {
+            "date": "2019-06-01T12:30:00Z",
+            "description": "Join us for an outdoor garden wedding at Great Marsh Estate, where we'll say our vows and take our bows. Reception to follow immediately after.",
+            "full_res_image": "GreatMarsh_FullRes",
+            "thumbnail_image": "GreatMarsh_Thumb",
+            "title": "Wedding Ceremony",
+            "location": {
+                "address": "6105 Great Marsh Pl, Bealeton, VA 22712, USA",
+                "title": "Great Marsh Estate",
+                "website": "https://greatmarshestate.com/"
+            }
+        },
+        {
+            "date": "2019-06-01T12:30:00Z",
+            "description": "Join us for an outdoor garden wedding at Great Marsh Estate, where we'll say our vows and take our bows. Reception to follow immediately after.",
+            "full_res_image": "GreatMarsh_FullRes",
+            "thumbnail_image": "GreatMarsh_Thumb",
+            "title": "Wedding Ceremony",
+            "location": {
+                "address": "6105 Great Marsh Pl, Bealeton, VA 22712, USA",
+                "title": "Great Marsh Estate",
+                "website": "https://greatmarshestate.com/"
+            }
+        },
+    ]
+}
