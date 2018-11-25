@@ -29,9 +29,7 @@ class EventsDataSource: NSObject, UITableViewDataSource {
 
         let viewModel = EventOverviewViewModel(event: events[indexPath.item])
         cell.configureFromViewModel(viewModel)
-        cell.borderedImageView.layer.cornerRadius = 30
-        cell.borderedImageView.layer.borderColor = UIColor.darkGray.cgColor
-        cell.borderedImageView.layer.borderWidth = 3
+
         return cell
     }
 

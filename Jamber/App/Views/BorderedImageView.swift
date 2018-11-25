@@ -10,31 +10,19 @@ import UIKit
 
 @IBDesignable
 class BorderedImageView: UIImageView {
-    @IBInspectable var borderWidth: CGFloat {
-        get {
-            return layer.borderWidth
-        }
-        set {
+    @IBInspectable var borderWidth: CGFloat = 0 {
+        didSet {
             layer.borderWidth = borderWidth
         }
     }
-    @IBInspectable var cornerRadius: CGFloat {
-        get {
-            return layer.cornerRadius
-        }
-        set {
+    @IBInspectable var cornerRadius: CGFloat = 0 {
+        didSet {
             layer.cornerRadius = cornerRadius
+            layer.masksToBounds = true
         }
     }
     @IBInspectable var borderColor: UIColor? {
-        get {
-            if let cgColor = layer.borderColor {
-                return UIColor(cgColor: cgColor)
-            } else {
-                return nil
-            }
-        }
-        set {
+        didSet {
             layer.borderColor = borderColor?.cgColor
         }
     }
