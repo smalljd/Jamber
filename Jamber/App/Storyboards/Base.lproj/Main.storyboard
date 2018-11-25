@@ -77,6 +77,75 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QMF-Eh-ge4">
                                 <rect key="frame" x="0.0" y="220" width="375" height="398"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EventOverviewCell" rowHeight="80" id="sJa-oz-lA9" customClass="EventOverviewCell" customModule="Jamber" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sJa-oz-lA9" id="Okm-Y3-5F3">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreatMarsh_FullRes" translatesAutoresizingMaskIntoConstraints="NO" id="n0B-IK-q1V" customClass="BorderedImageView" customModule="Jamber" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="10" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="1Rn-QX-f0e"/>
+                                                        <constraint firstAttribute="height" constant="60" id="3eV-pT-DFC"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="30"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Wedding Ceremony" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlX-C4-7Hy">
+                                                    <rect key="frame" x="83" y="11" width="247" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                    <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Great Marsh Estate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cN8-H8-DDq">
+                                                    <rect key="frame" x="83" y="34.5" width="247" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="4:30 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuD-us-DKm">
+                                                    <rect key="frame" x="83" y="55" width="247" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cN8-H8-DDq" firstAttribute="leading" secondItem="VlX-C4-7Hy" secondAttribute="leading" id="65r-ZX-xdS"/>
+                                                <constraint firstItem="zuD-us-DKm" firstAttribute="trailing" secondItem="cN8-H8-DDq" secondAttribute="trailing" id="6oA-cO-HWH"/>
+                                                <constraint firstItem="VlX-C4-7Hy" firstAttribute="leading" secondItem="n0B-IK-q1V" secondAttribute="trailing" constant="8" id="8jq-vX-OzB"/>
+                                                <constraint firstItem="n0B-IK-q1V" firstAttribute="top" secondItem="Okm-Y3-5F3" secondAttribute="top" constant="10" id="CJT-gJ-uqr"/>
+                                                <constraint firstItem="zuD-us-DKm" firstAttribute="leading" secondItem="cN8-H8-DDq" secondAttribute="leading" id="G2f-x9-0P6"/>
+                                                <constraint firstAttribute="bottom" secondItem="zuD-us-DKm" secondAttribute="bottom" constant="11" id="IVm-HU-InB"/>
+                                                <constraint firstAttribute="trailing" secondItem="VlX-C4-7Hy" secondAttribute="trailing" constant="12" id="J2t-qb-fpj"/>
+                                                <constraint firstItem="VlX-C4-7Hy" firstAttribute="top" secondItem="Okm-Y3-5F3" secondAttribute="top" constant="11" id="NRr-iH-Qpa"/>
+                                                <constraint firstItem="cN8-H8-DDq" firstAttribute="trailing" secondItem="VlX-C4-7Hy" secondAttribute="trailing" id="VTA-Zx-Qdg"/>
+                                                <constraint firstAttribute="bottom" secondItem="n0B-IK-q1V" secondAttribute="bottom" constant="10" id="gwq-Fz-n0B"/>
+                                                <constraint firstItem="zuD-us-DKm" firstAttribute="top" secondItem="cN8-H8-DDq" secondAttribute="bottom" id="jTu-fD-TRx"/>
+                                                <constraint firstItem="cN8-H8-DDq" firstAttribute="top" secondItem="VlX-C4-7Hy" secondAttribute="bottom" id="kjE-D3-zKm"/>
+                                                <constraint firstItem="n0B-IK-q1V" firstAttribute="leading" secondItem="Okm-Y3-5F3" secondAttribute="leading" constant="15" id="uqD-0d-s6s"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="borderedImageView" destination="n0B-IK-q1V" id="Cnk-N6-m1v"/>
+                                            <outlet property="dateTimeLabel" destination="zuD-us-DKm" id="XbE-2g-Fs3"/>
+                                            <outlet property="eventTitleLabel" destination="VlX-C4-7Hy" id="AZO-H2-Km6"/>
+                                            <outlet property="locationLabel" destination="cN8-H8-DDq" id="9eX-g7-i4U"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -93,7 +162,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Events" id="FfV-Q0-y9k"/>
                     <connections>
-                        <outlet property="countdownContainerView" destination="17n-fr-12V" id="UKE-LH-3DU"/>
+                        <outlet property="countdownContainerView" destination="17n-fr-12V" id="MmB-GC-1HH"/>
+                        <outlet property="tableView" destination="QMF-Eh-ge4" id="tjd-Oa-euG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -120,6 +190,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="GreatMarsh_FullRes" width="245.75999450683594" height="163.91999816894531"/>
         <image name="friends_by_water" width="1382.4000244140625" height="921.5999755859375"/>
     </resources>
 </document>

@@ -1,10 +1,10 @@
 {
     "events": [
         {
-            "date": "2019-06-01T12:30:00Z",
+            "date": "2019-06-01T20:30:00Z",
             "description": "Join us for an outdoor garden wedding at Great Marsh Estate, where we'll say our vows and take our bows. Reception to follow immediately after.",
             "full_res_image": "GreatMarsh_FullRes",
-            "thumbnail_image": "GreatMarsh_Thumb",
+            "thumbnail_image": "GreatMarsh_FullRes",
             "title": "Wedding Ceremony",
             "location": {
                 "address": "6105 Great Marsh Pl, Bealeton, VA 22712, USA",
@@ -13,11 +13,11 @@
             }
         },
         {
-            "date": "2019-06-01T12:30:00Z",
-            "description": "Join us for an outdoor garden wedding at Great Marsh Estate, where we'll say our vows and take our bows. Reception to follow immediately after.",
+            "date": "2019-06-01T21:00:00Z",
+            "description": "To be honest, the wedding party needs to snap a few photos around this time, so grab a drink and hang out by the bar. We'll be back before you know it.",
             "full_res_image": "GreatMarsh_FullRes",
-            "thumbnail_image": "GreatMarsh_Thumb",
-            "title": "Wedding Ceremony",
+            "thumbnail_image": "GreatMarsh_FullRes",
+            "title": "Cocktail Hour",
             "location": {
                 "address": "6105 Great Marsh Pl, Bealeton, VA 22712, USA",
                 "title": "Great Marsh Estate",
@@ -25,16 +25,28 @@
             }
         },
         {
-            "date": "2019-06-01T12:30:00Z",
-            "description": "Join us for an outdoor garden wedding at Great Marsh Estate, where we'll say our vows and take our bows. Reception to follow immediately after.",
+            "date": "2019-06-01T22:00:00Z",
+            "description": "Everyone's favorite part. I hope you packed your dancing shoes, because the bride and groom like to \"drop it like it's hot.\"",
             "full_res_image": "GreatMarsh_FullRes",
-            "thumbnail_image": "GreatMarsh_Thumb",
-            "title": "Wedding Ceremony",
+            "thumbnail_image": "GreatMarsh_FullRes",
+            "title": "Reception",
             "location": {
                 "address": "6105 Great Marsh Pl, Bealeton, VA 22712, USA",
                 "title": "Great Marsh Estate",
                 "website": "https://greatmarshestate.com/"
             }
         },
+        {
+            "date": "2019-06-02T02:30:00Z",
+            "description": "Let's keep the party alive and pretend we're much younger than we actually are. Head over to Bar Louie's when we get kicked out of Great Marsh for some more dancing and cocktails.",
+            "full_res_image": "BarLouie_FullRes",
+            "thumbnail_image": "BarLouie_FullRes",
+            "title": "After Party",
+            "location": {
+                "address": "6105 Great Marsh Pl, Bealeton, VA 22712, USA",
+                "title": "Bar Louie",
+                "website": "https://barlouie.com/"
+            }
+        }
     ]
 }
