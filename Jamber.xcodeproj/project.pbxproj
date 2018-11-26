@@ -22,7 +22,6 @@
 		1F0E966121AA1FB9004E7E0D /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E966021AA1FB9004E7E0D /* CountdownView.swift */; };
 		1F0E966521AA26A0004E7E0D /* BorderedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E966421AA26A0004E7E0D /* BorderedImageView.swift */; };
 		1F0E966821AA2BD7004E7E0D /* EventsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E966721AA2BD7004E7E0D /* EventsDataSource.swift */; };
-		1F0E966A21AA4480004E7E0D /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E966921AA4480004E7E0D /* EventList.swift */; };
 		1F0E966D21AB3C3C004E7E0D /* EventOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E966C21AB3C3C004E7E0D /* EventOverviewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +64,6 @@
 		1F0E966021AA1FB9004E7E0D /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 		1F0E966421AA26A0004E7E0D /* BorderedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedImageView.swift; sourceTree = "<group>"; };
 		1F0E966721AA2BD7004E7E0D /* EventsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDataSource.swift; sourceTree = "<group>"; };
-		1F0E966921AA4480004E7E0D /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
 		1F0E966C21AB3C3C004E7E0D /* EventOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventOverviewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,7 +236,6 @@
 			isa = PBXGroup;
 			children = (
 				1F0E965521AA0874004E7E0D /* Event.swift */,
-				1F0E966921AA4480004E7E0D /* EventList.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -424,7 +421,6 @@
 				1F0E961A21AA05AE004E7E0D /* EventListViewController.swift in Sources */,
 				1F0E961821AA05AE004E7E0D /* AppDelegate.swift in Sources */,
 				1F0E966521AA26A0004E7E0D /* BorderedImageView.swift in Sources */,
-				1F0E966A21AA4480004E7E0D /* EventList.swift in Sources */,
 				1F0E966821AA2BD7004E7E0D /* EventsDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

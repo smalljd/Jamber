@@ -11,11 +11,16 @@ import UIKit
 class CountdownView: UIView {
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var monthsLabel: UILabel!
-    @IBOutlet weak var daysLabel: UILabel!
-    @IBOutlet weak var hoursLabel: UILabel!
-    @IBOutlet weak var minutesLabel: UILabel!
-    @IBOutlet weak var secondsLabel: UILabel!
+    @IBOutlet weak var monthsTextLabel: UILabel!
+    @IBOutlet weak var monthsNumberLabel: UILabel!
+    @IBOutlet weak var daysTextLabel: UILabel!
+    @IBOutlet weak var daysNumberLabel: UILabel!
+    @IBOutlet weak var hoursTextLabel: UILabel!
+    @IBOutlet weak var hoursNumberLabel: UILabel!
+    @IBOutlet weak var minutesTextLabel: UILabel!
+    @IBOutlet weak var minutesNumberLabel: UILabel!
+    @IBOutlet weak var secondsTextLabel: UILabel!
+    @IBOutlet weak var secondsNumberLabel: UILabel!
 
     var countdownDateComponents = [Calendar.Component: Int]()
     var calendar = Calendar(identifier: .gregorian)
@@ -26,9 +31,17 @@ class CountdownView: UIView {
         return dateComponents.date!
     }()
 
-    func updateComponents() {
-        assert(monthsLabel != nil && hoursLabel != nil)
+    override func awakeFromNib() {
+        super.awakeFromNib()
 
+        let timer = Timer(fire: Date(), interval: 1.0, repeats: true) { [weak self] _ in
+            self?.refreshLabels()
+        }
+
+        RunLoop.main.add(timer, forMode: RunLoop.Mode.default)
+    }
+
+    func updateComponents() {
         let dateComponentsUntilWedding = calendar.dateComponents([.month, .day, .hour, .minute, .second], from: Date(), to: targetDate)
         countdownDateComponents[.month] = dateComponentsUntilWedding.month ?? 0
         countdownDateComponents[.day] = dateComponentsUntilWedding.day ?? 0
@@ -46,25 +59,32 @@ class CountdownView: UIView {
                 return
         }
 
+        assert(monthsTextLabel != nil && hoursTextLabel != nil)
+
         // Months
         let monthsWord = monthsLeft % 10 == 1 ? "Month" : "Months"
-        monthsLabel.text = "\(monthsLeft) \(monthsWord)"
+        monthsTextLabel.text = "\(monthsWord)"
+        monthsNumberLabel.text = "\(monthsLeft)"
 
         // Days
         let daysWord = daysLeft % 10 == 1 ? "Day" : "Days"
-        daysLabel.text = "\(daysLeft) \(daysWord)"
+        daysTextLabel.text = "\(daysWord)"
+        daysNumberLabel.text = "\(daysLeft)"
 
         // Hours
         let hoursWord = hoursLeft % 10 == 1 ? "Hour" : "Hours"
-        hoursLabel.text = "\(hoursLeft) \(hoursWord)"
+        hoursTextLabel.text = "\(hoursWord)"
+        hoursNumberLabel.text = "\(hoursLeft)"
 
         // Minutes
         let minutesWord = minutesLeft % 10 == 1 ? "Minute" : "Minutes"
-        minutesLabel.text = "\(minutesLeft) \(minutesWord)"
+        minutesTextLabel.text = "\(minutesWord)"
+        minutesNumberLabel.text = "\(minutesLeft)"
 
         // Seconds
         let secondsWord = secondsLeft % 10 == 1 ? "Second" : "Seconds"
-        secondsLabel.text = "\(secondsLeft) \(secondsWord)"
+        secondsTextLabel.text = "\(secondsWord)"
+        secondsNumberLabel.text = "\(secondsLeft)"
     }
 }
 
